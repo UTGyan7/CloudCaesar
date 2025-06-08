@@ -7,14 +7,15 @@ import pandas as pd
 # Load environment variables
 load_dotenv()
 
+# Verify API key
+api_key = os.getenv("OPENAI_API_KEY")
+if not api_key:
+    raise ValueError("OPENAI_API_KEY not found in environment variables. Please add it to your .env file.")
+
 # Initialize OpenAI client with OpenRouter headers
 client = OpenAI(
-    api_key=os.getenv("OPENAI_API_KEY"),
-    base_url=os.getenv("OPENAI_BASE_URL", "https://openrouter.ai/api/v1"),
-    default_headers={
-        "HTTP-Referer": "https://github.com/yourusername/your-repo",  # Required for OpenRouter
-        "X-Title": "Cloud Scissors U3.1"  # Optional but recommended
-    }
+    api_key=api_key,
+    base_url="https://openrouter.ai/api/v1"
 )
 
 # Load models from CSV
@@ -48,6 +49,10 @@ def generate_response(model_id: str, messages: List[Dict]) -> str:
     """
     try:
         response = client.chat.completions.create(
+            extra_headers={
+                "HTTP-Referer": "https://github.com/UTGyan7/CloudCaesar", # Optional. Site URL for rankings on openrouter.ai.
+                "X-Title": "CloudCaesar" # Optional. Site title for rankings on openrouter.ai.
+            },
             model=model_id,
             messages=messages,
             temperature=0.7,

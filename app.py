@@ -4,7 +4,7 @@ from utils.ai_models import generate_response, AVAILABLE_MODELS
 
 # Page configuration
 st.set_page_config(
-    page_title="AI Chat Assistant",
+    page_title="CloudCaesar",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -26,7 +26,7 @@ def simulate_typing(text: str, container):
 
 def main():
     # Two-column layout
-    sidebar, main = st.columns([1, 4])
+    sidebar, main = st.columns([2, 7])
     
     with sidebar:
         # Make sidebar sticky and scrollable
@@ -44,7 +44,7 @@ def main():
             </style>
         """, unsafe_allow_html=True)
         
-        st.title("AI Chat Assistant")
+        st.title("CloudCaesar")
         
         # Model selection
         model_names = list(AVAILABLE_MODELS.keys())
@@ -116,7 +116,8 @@ def main():
             .stChatInput {
                 position: fixed;
                 bottom: 0;
-                right: 0;
+                right: 20rem;
+                left: 20rem;
                 width: 80%;  /* Match the main column width */
                 background-color: var(--background-color);
                 padding: 1rem;
