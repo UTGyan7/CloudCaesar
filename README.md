@@ -73,4 +73,8 @@ MIT License
 ## Credits
 - Website built with [Streamlit](https://streamlit.io/)
 - APIs supplied by [OpenRouter](https://openrouter.ai)
-- AI model integration by [Utkarsh Gyan](https://github.com/UTGyan7) 
+- AI model integration by [Utkarsh Gyan](https://github.com/UTGyan7)
+
+---
+
+⚡ Built by [Utkarsh Gyan](https://github.com/UTGyan7) — I build fast & freelance small gigs too. DM me!
