@@ -8,6 +8,10 @@ An AI chatbot built with Streamlit. Supports multiple AI models (e.g., Llama, GP
 
 ---
 
+<img src="CloudCaesar-img.png">
+
+---
+
 ## Features
 - Chat with various AI models (selectable in the sidebar)
 - Clean, modern UI with markdown/code formatting
