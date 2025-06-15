@@ -7,9 +7,9 @@ An AI chatbot built with Streamlit. Supports multiple AI models (e.g., Llama, GP
 **Note:** This version is text-only and can be deployed on [Streamlit Community Cloud](https://streamlit.io/cloud).
 
 ---
-
-<img src="CloudCaesar-img.png">
-
+<p align=center>
+  <img src="CloudCaesar-img.png">
+</p>
 ---
 
 ## Features
