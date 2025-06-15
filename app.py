@@ -116,8 +116,8 @@ def main():
             .stChatInput {
                 position: fixed;
                 bottom: 0;
-                right: 20rem;
-                left: 20rem;
+                right: 10rem;
+                left: 10rem;
                 width: 80%;  /* Match the main column width */
                 background-color: var(--background-color);
                 padding: 1rem;
